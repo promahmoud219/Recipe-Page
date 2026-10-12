@@ -1,0 +1,124 @@
+:root{
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+
+    --brown-800: #854632;
+
+    --white: #FFFFFF;
+
+    --letter-spacing: 0px;
+
+    --txt-preset1-font-family: "Young Serif", serif;
+    --txt-preset1-font-size: 40px;
+    --txt-preset1-line-height: 100%;
+    --txt-preset1-font-weight: 400;
+    
+    --txt-preset2-font-family: "Young Serif", serif;
+    --txt-preset2-font-size: 28px;
+    --txt-preset2-line-height: 100%;
+    --txt-preset2-font-weight: 400;
+    
+    --txt-preset3-font-family: "Outfit", sans-serif;
+    --txt-preset3-font-size: 20px;
+    --txt-preset3-line-height: 100%;
+    --txt-preset3-font-weight: 600;
+
+    --txt-preset4-font-family: "Outfit", sans-serif;
+    --txt-preset4-font-size: 16px;
+    --txt-preset4-line-height: 150%;
+    --txt-preset4-font-weight-normal: 400;
+    --txt-preset4-font-weight-bold: 700;
+}
+
+html, body, h1, h2, h3, p, ul{
+    padding: 0;
+    margin: 0;
+}
+ 
+
+main{
+    max-width: 375px;
+    width: 100%;
+}
+
+.top-img{
+    width: 100%;
+}
+
+
+.text-content{
+    letter-spacing: 0px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.text-content p, .text-content li{
+    color: var(--stone-600);
+    font-family: var(--txt-preset4-font-family);
+    font-size: var(--txt-preset4-font-size);
+    line-height: var(--txt-preset4-line-height);
+    font-weight: var(--txt-preset4-font-weight-normal);
+}
+
+.text-content section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+} 
+
+.text-content h2{
+    font-family: var(--txt-preset2-font-family);
+    font-size: var(--txt-preset2-font-size);
+    font-weight: var(--txt-preset2-font-weight);
+    line-height: var(--txt-preset2-line-height);
+    color: var(--rose-800);
+}
+
+#title h1{
+    font-size: 36px;
+    font-family: var(--txt-preset1-font-family);
+    font-weight: var(--txt-preset1-font-weight);
+    line-height: var(--txt-preset1-line-height);        
+    color: var(--stone-900);
+}
+
+
+#preparation{
+    padding: 24px;
+    border-radius: 12px;
+    gap: 16px;
+    background: var(--rose-50);
+
+}
+
+#preparation h3{
+    color: var(--rose-800);
+    font-family: var(--txt-preset3-font-family);
+    font-size: var(--txt-preset3-font-size);
+    font-weight: var(--txt-preset3-font-weight);
+    line-height: var(--txt-preset3-line-height);
+    
+
+}
+
+#preparation ul{
+    gap: 8px;
+}
+
+#preparation ul li::marker{
+    color: var(--rose-800);
+}
+ 
+
+.text-content ul, .text-content ol{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
