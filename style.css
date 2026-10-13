@@ -41,7 +41,13 @@ html, body, h1, h2, h3, p, ul, ol{
     padding: 0;
     margin: 0;
 }
- 
+
+ul li, 
+ol li{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 main{
     min-width: 100%;
@@ -130,8 +136,9 @@ table tr{
 
 
 .line {
-    border: none;
-    border-top: 3px solid var(--stone-150);
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid var(--stone-150);
 }
 
 

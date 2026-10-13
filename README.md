@@ -34,3 +34,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 * **Avoiding Style Conflicts:** Used CSS `:not()` to exclude specific elements (like `#preparation h2`) from global styles, preventing unintended overrides regardless of code order.
 * **List Spacing Limitations:** Used `display: flex` with `gap` to space out list bullets, as the `::marker` pseudo-element strictly ignores `padding` and `margin`.
 * **Semantic vs. Visual Bold:** Used `<b>` purely for visual emphasis (e.g., list prefixes), reserving `<strong>` for content with genuine semantic importance and screen reader accessibility.
+* **writing line:** it's important to set the width and the height
+.line {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid var(--stone-150);
+}
