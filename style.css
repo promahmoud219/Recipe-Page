@@ -14,22 +14,24 @@
     --letter-spacing: 0px;
 
     --txt-preset1-font-family: "Young Serif", serif;
-    --txt-preset1-font-size: 40px;
+    --txt-preset1-font-size: 2.5rem;
+    /* --txt-preset1-font-size: 40px; */
+
     --txt-preset1-line-height: 100%;
     --txt-preset1-font-weight: 400;
     
     --txt-preset2-font-family: "Young Serif", serif;
-    --txt-preset2-font-size: 28px;
+    --txt-preset2-font-size: 1.75rem;
     --txt-preset2-line-height: 100%;
     --txt-preset2-font-weight: 400;
     
     --txt-preset3-font-family: "Outfit", sans-serif;
-    --txt-preset3-font-size: 20px;
+    --txt-preset3-font-size: 1.25rem;
     --txt-preset3-line-height: 100%;
     --txt-preset3-font-weight: 600;
 
     --txt-preset4-font-family: "Outfit", sans-serif;
-    --txt-preset4-font-size: 16px;
+    --txt-preset4-font-size: 1rem;
     --txt-preset4-line-height: 150%;
     --txt-preset4-font-weight-normal: 400;
     --txt-preset4-font-weight-bold: 700;
@@ -42,7 +44,7 @@ html, body, h1, h2, h3, p, ul, ol{
  
 
 main{
-    min-width: 375px;
+    min-width: 100%;
 }
 
 .top-img{
@@ -80,7 +82,7 @@ main{
     color: var(--rose-800);
 }
 
-#title h1{
+.page-title{
     font-size: var(--txt-preset1-font-size);
     font-family: var(--txt-preset1-font-family);
     font-weight: var(--txt-preset1-font-weight);
