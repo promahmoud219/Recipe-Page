@@ -35,15 +35,14 @@
     --txt-preset4-font-weight-bold: 700;
 }
 
-html, body, h1, h2, h3, p, ul{
+html, body, h1, h2, h3, p, ul, ol{
     padding: 0;
     margin: 0;
 }
  
 
 main{
-    max-width: 375px;
-    width: 100%;
+    min-width: 375px;
 }
 
 .top-img{
@@ -52,7 +51,7 @@ main{
 
 
 .text-content{
-    letter-spacing: 0px;
+    letter-spacing: var(--letter-spacing);
     padding: 40px 32px;
     display: flex;
     flex-direction: column;
@@ -73,7 +72,7 @@ main{
     gap: 24px;
 } 
 
-.text-content h2{
+.text-content h2:not(#preparation h2){
     font-family: var(--txt-preset2-font-family);
     font-size: var(--txt-preset2-font-size);
     font-weight: var(--txt-preset2-font-weight);
@@ -82,7 +81,7 @@ main{
 }
 
 #title h1{
-    font-size: 36px;
+    font-size: var(--txt-preset1-font-size);
     font-family: var(--txt-preset1-font-family);
     font-weight: var(--txt-preset1-font-weight);
     line-height: var(--txt-preset1-line-height);        
@@ -98,27 +97,57 @@ main{
 
 }
 
-#preparation h3{
+#preparation h2{
     color: var(--rose-800);
     font-family: var(--txt-preset3-font-family);
     font-size: var(--txt-preset3-font-size);
     font-weight: var(--txt-preset3-font-weight);
     line-height: var(--txt-preset3-line-height);
-    
-
-}
-
-#preparation ul{
-    gap: 8px;
-}
+} 
 
 #preparation ul li::marker{
     color: var(--rose-800);
 }
- 
+
+ul li::marker, ol li::marker:not(#preparation ul li::marker){
+    color: var(--brown-800);
+    font-size: var(--txt-preset4-font-size);
+    font-weight: var(--txt-preset4-font-weight-bold);
+}
 
 .text-content ul, .text-content ol{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
+
+table tr{
+    border: 3px solid red;
+}
+
+
+
+.line {
+    border: none;
+    border-top: 3px solid var(--stone-150);
+}
+
+
+
+@media (min-width: 768px) {
+    body{
+        background: var(--stone-100);
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article{
+        min-width: 616px;
+        width: 60%;
+        background: var(--white);
+    }
+}
+ 
