@@ -37,17 +37,16 @@
     --txt-preset4-font-weight-bold: 700;
 }
 
-html, body, h1, h2, h3, p, ul, ol{
+html, body, h1, h2, h3, p{
     padding: 0;
     margin: 0;
 }
 
-ul li, 
-ol li{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+ul, ol{
+    padding-inline-start: 18px;
+    list-style-position: outside;
 }
+ 
 
 main{
     min-width: 100%;
@@ -102,7 +101,6 @@ main{
     border-radius: 12px;
     gap: 16px;
     background: var(--rose-50);
-
 }
 
 #preparation h2{
@@ -111,17 +109,7 @@ main{
     font-size: var(--txt-preset3-font-size);
     font-weight: var(--txt-preset3-font-weight);
     line-height: var(--txt-preset3-line-height);
-} 
-
-#preparation ul li::marker{
-    color: var(--rose-800);
-}
-
-ul li::marker, ol li::marker:not(#preparation ul li::marker){
-    color: var(--brown-800);
-    font-size: var(--txt-preset4-font-size);
-    font-weight: var(--txt-preset4-font-weight-bold);
-}
+}  
 
 .text-content ul, .text-content ol{
     display: flex;
@@ -129,8 +117,15 @@ ul li::marker, ol li::marker:not(#preparation ul li::marker){
     gap: 8px;
 }
 
- 
+.text-content ul li::marker{
+    color: var(--rose-800);
+}
 
+.text-content ol li::marker{
+    color: var(--brown-800);
+    font-weight: var(--txt-preset4-font-weight-bold);
+}
+  
 table td{
     font-family: var(--txt-preset4-font-family);
     font-size: var(--txt-preset4-font-size);
@@ -141,16 +136,11 @@ table td{
 }
 
 table tbody{
-    text-align: left;
-    /* height: 168px; */
+    text-align: left; 
 }
 
 table tbody th{
-    padding: 0 32px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 12px;
+    padding: 0 32px; 
 }
 
 .line {
@@ -168,6 +158,12 @@ table tbody th{
 .nutrition-table tr:not(:last-child) {
     border-bottom: 1px solid var(--stone-150);
 }
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     body{
