@@ -8,12 +8,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Screenshot](#screenshot)
   - [Links](#links) 
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [What I learned](#what-i-learned)    
   
 ### Screenshot
 
