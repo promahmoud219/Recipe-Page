@@ -129,9 +129,7 @@ ul li::marker, ol li::marker:not(#preparation ul li::marker){
     gap: 8px;
 }
 
-table tr{
-    border: 1px solid red;
-}
+ 
 
 table td{
     font-family: var(--txt-preset4-font-family);
@@ -141,16 +139,17 @@ table td{
     color: var(--brown-800);
 
 }
+
 table tbody{
     text-align: left;
-    height: 168px;
+    /* height: 168px; */
 }
 
 table tbody th{
     padding: 0 32px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column; 
+    align-items: center;
     gap: 12px;
 }
 
@@ -160,7 +159,15 @@ table tbody th{
     border-top: 1px solid var(--stone-150);
 }
 
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+.nutrition-table tr:not(:last-child),
+.nutrition-table tr:not(:last-child) {
+    border-bottom: 1px solid var(--stone-150);
+}
 
 @media (min-width: 768px) {
     body{
