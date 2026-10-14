@@ -29,7 +29,7 @@
     --txt-preset3-font-size: 1.25rem;
     --txt-preset3-line-height: 100%;
     --txt-preset3-font-weight: 600;
-
+    
     --txt-preset4-font-family: "Outfit", sans-serif;
     --txt-preset4-font-size: 1rem;
     --txt-preset4-line-height: 150%;
@@ -46,14 +46,20 @@ ul, ol{
     padding-inline-start: 18px;
     list-style-position: outside;
 }
- 
+
 
 main{
     min-width: 100%;
 }
 
+article{
+    border-radius: 24px;
+}
+
 .top-img{
     width: 100%;
+    overflow: hidden;
+
 }
 
 
@@ -132,15 +138,17 @@ table td{
     font-weight: var(--txt-preset4-font-weight-bold);
     line-height: var(--txt-preset4-line-height);   
     color: var(--brown-800);
-
+    
+     
 }
 
 table tbody{
-    text-align: left; 
+    text-align: left;
 }
 
-table tbody th{
-    padding: 0 32px; 
+
+tbody th{
+    padding-left: 32px;
 }
 
 .line {
@@ -159,26 +167,42 @@ table tbody th{
     border-bottom: 1px solid var(--stone-150);
 }
 
+ 
 
-
-
-
-
-
+/* tablet */
 @media (min-width: 768px) {
     body{
         background: var(--stone-100);
     }
-    main{
+
+    main{ 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: center; 
+        padding: 48px 128px;
+        gap: 8px;
     }
 
     article{
-        min-width: 616px;
-        width: 60%;
+        max-width: 736px;
+        width: 100%;
+        padding: 40px;
         background: var(--white);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 40px;
+        box-sizing: border-box;
+    }
+
+    .top-img{
+        border-radius: 12px;
+        min-width: 536px;
+        width: 100%;
+        min-height: 300px;
+        height: 100%;
+    }
+    .text-content{
+        padding: 0;
     }
 }
  
